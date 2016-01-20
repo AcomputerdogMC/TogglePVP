@@ -1,0 +1,21 @@
+name: TogglePVP
+version: 0.1.0
+description: Toggles PVP setting
+author: acomputerdog
+main: net.acomputerdog.togglepvp.PluginTogglePVP
+
+commands:
+  togglepvp:
+    description: Toggles PVP setting
+    permission: togglepvp.command
+    usage: Incorrect usage!  Use /togglepvp [world]
+  setpvp:
+    description: Directly sets the PVP setting
+    permission: togglepvp.command
+    usage: Incorrect usage!  Use /setpvp <state> [world]
+    aliases: pvp
+
+permissions:
+  togglepvp.command:
+    description: Togggle PVP
+    default: op
