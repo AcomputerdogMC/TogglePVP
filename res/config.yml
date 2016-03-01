@@ -1,0 +1,8 @@
+# TogglePVP configuration file.
+
+# The global PVP setting.  If set to MIXED then use settings below
+global_mode: "BYPASS"
+
+# individual mode settings.  Use the world name as key and mode as value.
+world:
+  World: "BYPASS"
