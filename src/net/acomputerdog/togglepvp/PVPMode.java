@@ -32,6 +32,7 @@ public enum PVPMode {
     PVPMode(boolean worldState) {
         this.worldState = worldState;
         ModeList.pvpMap.put(this.name(), this);
+        ModeList.pvpMap.put(this.name().toUpperCase(), this);
     }
 
     public boolean getWorldState() {
@@ -40,6 +41,9 @@ public enum PVPMode {
 
     public static PVPMode parse(String name) {
         PVPMode mode = ModeList.pvpMap.get(name);
+        if (mode == null) {
+            mode = ModeList.pvpMap.get(name.toUpperCase());
+        }
         if (mode == null) {
             throw new IllegalArgumentException("Name must be the name of a PVPMode enum constant!");
         }
