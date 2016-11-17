@@ -40,13 +40,15 @@ public enum PVPMode {
     }
 
     public static PVPMode parse(String name) {
+        if (name == null) {
+            return null;
+        }
+
         PVPMode mode = ModeList.pvpMap.get(name);
         if (mode == null) {
             mode = ModeList.pvpMap.get(name.toUpperCase());
         }
-        if (mode == null) {
-            throw new IllegalArgumentException("Name must be the name of a PVPMode enum constant!");
-        }
+
         return mode;
     }
 

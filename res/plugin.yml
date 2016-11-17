@@ -1,5 +1,5 @@
 name: TogglePVP
-version: 2.0.1
+version: 2.0.2
 description: Toggles PVP setting
 author: acomputerdog
 main: net.acomputerdog.togglepvp.PluginTogglePVP
