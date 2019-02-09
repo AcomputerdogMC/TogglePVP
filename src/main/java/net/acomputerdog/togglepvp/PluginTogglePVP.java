@@ -18,6 +18,9 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Plugin main class
+ */
 public class PluginTogglePVP extends JavaPlugin implements Listener {
 
     private PVPMode globalMode;
@@ -181,10 +184,4 @@ public class PluginTogglePVP extends JavaPlugin implements Listener {
     public void onUnloadWorld(WorldUnloadEvent e) {
         worldMap.remove(e.getWorld());
     }
-
-    /*
-    private boolean parseBool(String bool) {
-        return bool.equalsIgnoreCase("true") || bool.equalsIgnoreCase("on") || bool.equalsIgnoreCase("pvp");
-    }
-    */
 }
