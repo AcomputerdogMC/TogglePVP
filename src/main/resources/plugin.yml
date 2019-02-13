@@ -3,6 +3,7 @@ version: ${version}
 description: Toggles PVP setting
 author: acomputerdog
 main: net.acomputerdog.togglepvp.PluginTogglePVP
+api-version: 1.13
 
 commands:
   togglepvp:
